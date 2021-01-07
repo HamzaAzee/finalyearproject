@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Start Bootstrap</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body class="bg">
+<div class="navbar navbar-inverse navbar-static-top"> 
+<div class="container">
+<a href="#" class="navbar-brand">Database Operation</a>
+<button class="navbar-toggle"  data-toggle ="collapse" data-target= ".navHeaderCollapse"  >
+ <span class="icon-bar"> </span>
+ <span class="icon-bar"> </span>
+ <span class="icon-bar"> </span>
+ </button>
+	<div class="collapse navbar-collapse  navHeaderCollapse">
+		<ul class="nav navbar-nav ">
+			<li> <a href="index.html"> Home </a> </li>
+			<li class="active"> <a href="insertion.html"> Insertion </a> </li>
+			<li> <a href="viewall.php"> Show All </a> </li>
+			<li> <a href=""> Contact Us </a> </li>
+		</ul>
+	</div> <!-- div nav collapse -->
+</div> <!-- div container -->
+</div> <!-- div navbar -->
+
+<!-- for Columns -->
+<div class="container-fluid">
+	<div class="row">
+    	<div class="col-md-4 col-sm-4 col-xs-12"></div>
+         <div class="col-md-4 col-sm-4 col-xs-12">
+          <!-- form fields -->  
+    <form class="form-container" method="REQUEST" action="insertdata2.php">
+      <div class="form-group">
+       <label>Ranking </label>
+       <input type="text" id="rollno" class="form-control" placeholder="Ranking">
+      </div>
+      <div class="form-group">
+       <label>type </label>
+       <input type="text" id="name" class="form-control" placeholder="type">
+      </div>
+      <div class="form-group">
+       <label>model </label>
+       <input type="text" id="class" class="form-control" placeholder="model">
+      </div>
+      <div class="form-group">
+       <label>FireRate </label>
+       <input type="text" id="gpa" class="form-control" placeholder="FireRate">
+      </div>
+	  <div class="form-group">
+       <label>BulletSize </label>
+       <input type="text" id="gpa" class="form-control" placeholder="BulletSize">
+      </div>
+	  <div class="form-group">
+       <label>MagSize </label>
+       <input type="text" id="gpa" class="form-control" placeholder="MagSize">
+      </div>
+	  <div class="form-group">
+       <label>range </label>
+       <input type="text" id="gpa" class="form-control" placeholder="range">
+      </div>
+	  <div class="form-group">
+       <label>muzzle </label>
+       <input type="text" id="gpa" class="form-control" placeholder="muzzel">
+      </div>
+	  <div class="form-group">
+       <label>origin </label>
+       <input type="text" id="gpa" class="form-control" placeholder="origin">
+      </div>
+	  <div class="form-group">
+       <label>manufacturers </label>
+       <input type="text" id="gpa" class="form-control" placeholder="manufacturers">
+      </div>
+      <div class="form-group">
+       <label>  </label>
+      <center> <button type="submit" id="submit" href="insertdata2.php">INSERT</button>
+          <center> <button type="submit" id="submit" href="insertdata2.php">SELECT</button> 
+       <button type="submit" id="submit">UPDATE</button> </center>
+	     <button type="submit" id="submit"   href="deletedata.php">Delete data here.</button>
+      </div>
+	  
+          </form> 
+        </div>
+	</div>
+</div>       
+<!-- for footer -->
+<div class="navbar navbar-default navbar-fixed-bottom" >
+<div class="container">
+<p class="navbar-text pull-left"> Designed by Hamza Azeem </p>
+<a href="http://www.hamzaazeem009.atwebpages.com" class="navbar-btn btn-info btn pull-right"> VISIT MY SITE </a>
+</div>
+</div>
+</body>
+</html>
