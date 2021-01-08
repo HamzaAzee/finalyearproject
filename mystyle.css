@@ -55,21 +55,12 @@
 	color:white;
 	align-content:center;
 	}
-	.column{
+	.col-md-2{
 	float:left;
 	width:33%;
 	padding:3%;
 	}
-	.column1{
-	float:left;
-	width:33%;
-	padding:3%;
-	}
-	.column2{
-	float:left;
-	width:33%;
-	padding:3%;
-	}
+	
 	.carousel-inner{
 height: 20%;
 overflow: hidden;
