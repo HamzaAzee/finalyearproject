@@ -86,7 +86,7 @@
 	color:white;
 	background-color:black;
 	}
-	.btn-danger{
+	#btn-danger{
 		width:30%;
 		height:30%;
 		font-family:erlin sans fb demi;
@@ -96,11 +96,11 @@
 		margin-top:10%;
 		margin-bottom:10%;
 	}
-	.btn-danger:hover{
+	#btn-danger:hover{
 	color:white;
 	background-color:darkorange;
 	}
-	.btn-success{
+	#btn-success{
 		width:30%;
 		height:30%;
 		font-family:erlin sans fb demi;
@@ -110,7 +110,7 @@
 		margin-top:2%;
 		margin-bottom:10%;
 	}
-	.btn-success:hover{
+	#btn-success:hover{
 	color:white;
 	background-color:springgreen;
 	}
