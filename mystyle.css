@@ -17,6 +17,18 @@
 		 font-size:500%;
 		 text-shadow:4px 4px 8px #000000;
 	 }
+	 .collapse{
+		 float:right;
+	 }
+	 
+	 #a{
+		 font-family:Arial rounded mt bold;
+		 color:hotpink;
+		 text-shadow:4px 4px 8px #000000;
+		 font-weight:bold;
+		 font-size:200%;
+	 }
+
 	 .align2{
 		 font-family:times new roman;
 		 font-weight:bold;
@@ -109,10 +121,27 @@
 		margin:auto;
 		margin-top:0%;
 		margin-bottom:auto;
+
 	}
 	.hovr:hover{
 		color:white;
 		background-color:hotpink;
+	}
+	#clr{
+		font-family:arial rounded mt bold;
+		color:white;
+		width:120%;
+		height:4%;
+		text-align:center;
+	}
+	#clr:hover{
+		color:white;
+		background-color:hotpink;
+	}
+	#clr2{
+		font-family:arial rounded mt bold;
+		color:khaki;
+		font-weight:bold;
 	}
 	#one{
 		width:90%;
@@ -133,13 +162,15 @@
 	}
 	#white{
 		
-		background:cover;
+		background:url("img19.jpg");
 		background-color:transparent;
+		background-size:contain;
+		background-repeat:no-repeat;
 	}
 	#btn-danger{
 		width:30%;
 		height:30%;
-		font-family:erlin sans fb demi;
+		font-family:berlin sans fb demi;
 		font-weight:bold;
 		border-radius:25px;
 		margin-left:34%;
@@ -148,12 +179,12 @@
 	}
 	#btn-danger:hover{
 	color:white;
-	background-color:darkorange;
+	background-color:orange;
 	}
 	#btn-success{
 		width:30%;
 		height:30%;
-		font-family:erlin sans fb demi;
+		font-family:berlin sans fb demi;
 		font-weight:bold;
 		border-radius:25px;
 		margin-left:34%;
@@ -167,7 +198,7 @@
 		#btn-scs{
 		width:30%;
 		height:30%;
-		font-family:erlin sans fb demi;
+		font-family:berlin sans fb demi;
 		font-weight:bold;
 		border-radius:25px;
 		margin-left:24%;
