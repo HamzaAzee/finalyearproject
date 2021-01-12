@@ -26,13 +26,13 @@
 	font-size:100%;
 }
 
-.field2{
-		width:80%;
-		height:80%;
-		
-		margin-top:0%;
-		margin-bottom:auto;
-}
+#col{
+	text-align:center-left;
+	width:100%;
+	background-color:lightsalmon;
+	border-radius:20px;
+	
+	}
 #do{
 	background-color:goldenrod;
 	border-radius:25px;
@@ -50,14 +50,18 @@
 	margin-left:60%;
 }
 
-.field{
-	background:none;
-	background-repeat:no-repeat;
-	background-size:contain;
+.field2{
+	    width:100%;
+		height:100%;
+		margin:auto;
+		margin-top:0%;
+		margin-bottom:auto;	
+        padding-top:5%;		
 }
 .dropdown {
   position: relative;
   display: inline-block;
+  
 }
 .dropdown-content{
 display:none;
