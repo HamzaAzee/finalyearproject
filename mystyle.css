@@ -59,7 +59,7 @@
 	height:60%;
 	}
 	.container{
-		padding:1%;	
+		padding:0%;	
 	}
 	.w2-container{
 		padding:5%;
@@ -161,8 +161,8 @@
 		background-size:100%, 100%;
 	}
 	#white{
-		
-		background:url("img19.jpg");
+		background:url("img13.jpg");
+		width:100%;
 		background-color:transparent;
 		background-size:contain;
 		background-repeat:no-repeat;
