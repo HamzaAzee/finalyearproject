@@ -1,8 +1,22 @@
-#aik{
-	background-color:none;
+#aikaik{
 	border-radius:25px;
-	text-align:left;
-	width:100%;
+    text-align:center;
+	padding:2%;
+	background-color:lightsalmon;
+}
+
+#dodo{
+	background-color:goldenrod;
+	border-radius:25px;
+    text-align:center;
+	padding:2%;
+}
+
+#teenteen{
+	background-color:mediumspringgreen;
+	border-radius:25px;
+    text-align:center;
+	padding:2%;
 }
 #aik1{
 	background-color:lightsalmon;
@@ -10,22 +24,39 @@
 	
 	margin-top:5%;
 	margin-bottom:5%;
-    
+
 	width:100%;
 }
 #resize{
 	padding-left:0%;
 	padding-right:2%;
+	width:100%;
 	margin-top:2%;
-	width:relative;
-	background-image:url("img13.jpg");
+	padding:4%;
+	background-image:url("img16.jpg");
 	background-size:cover;
+	}
+	#none{
+		background-image:none;
+	}
+	.row{
+		background-image:url("img17.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+		padding-top:2%;
+		padding-bottom:2%;
 	}
 #size{
 	font-family:Bodoni mt black;
 	font-size:100%;
 }
-
+#ctr{
+	padding-left:10%;
+	padding-right:10%;
+	margin-top:2%;
+	background-size:cover;
+	padding:5%;
+}
 #col{
 	text-align:center-left;
 	width:100%;
@@ -33,22 +64,6 @@
 	border-radius:20px;
 	
 	}
-#do{
-	background-color:goldenrod;
-	border-radius:25px;
-
-	padding:2%;
-	text-align:center;
-	margin-left:50%;
-}
-#teen{
-	background-color:mediumspringgreen;
-	border-radius:25px;
-	
-	text-align:center;
-	padding:2%;
-	margin-left:60%;
-}
 
 .field2{
 	    width:100%;
@@ -61,14 +76,14 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  
+  width:100%;
 }
 .dropdown-content{
 display:none;
 position:relative;
 background:none;
 color:white;
-  width:100%;
+  width:absolute;
   text-align:center;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 5px 5px;
@@ -76,4 +91,5 @@ color:white;
 }
 .dropdown:hover .dropdown-content {
   display: block;
+  
 }
