@@ -10,7 +10,7 @@
 	text-align:center;
 	margin-top:5%;
 	margin-bottom:5%;
-    margin-left:45%;
+    ;
 	width:100%;
 }
 #resize{
@@ -18,8 +18,6 @@
 	padding-right:2%;
 	margin-top:2%;
 	width:relative;
-	
-	
 	background-image:url("img13.jpg");
 	background-size:cover;
 	}
