@@ -11,15 +11,34 @@
     text-align:center;
 	padding:2%;
 }
+#left{
+	font-family:arial rounded mt bold;
+	margin-left:5%;
+    
+	font-weight:bold;
+	color:hotpink;
+	font-size:150%;
+}
+
 .hovr{
-	width:50%;
+	width:200%;
+	
 }
 .navbar-nav{
 	float:right;
 		background-color:indigo;
 }
+.nav{
+	text-align:center;
+}
+a{
+	color:black;
+	text-align:center;
+	height:100%;
+}
 .navbar{
 width:100%;	
+height:relative;
 }
 
 .container{
