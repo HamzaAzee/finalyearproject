@@ -72,7 +72,7 @@ background-color:indigo;
 	margin-top:30%;
 }
 #move{
-	margin-left:40%;
+	margin-left:30%;
 	margin-bottom:2%;
 }
 #sid{
@@ -83,7 +83,7 @@ background-color:indigo;
 }
 #resize{
 	width:100%;
-	margin-top:6%;
+	margin-top:0;
 	padding:4%;
 	background-image:url("img16.jpg");
 	background-size:cover;
