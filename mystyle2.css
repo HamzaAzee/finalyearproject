@@ -6,32 +6,33 @@
 }
 
 #dodo{
-	background-color:goldenrod;
+	background-color:lemonchiffon;
 	border-radius:25px;
     text-align:center;
 	padding:2%;
 }
-
+.hovr{
+	width:50%;
+}
+.navbar-nav{
+	float:right;
+}
+.navbar{
+width:100%;	
+}
+.container{
+	width:100%;
+}
 #teenteen{
 	background-color:mediumspringgreen;
 	border-radius:25px;
     text-align:center;
 	padding:2%;
 }
-#aik1{
-	background-color:lightsalmon;
-	border-radius:25px;
-	
-	margin-top:5%;
-	margin-bottom:5%;
 
-	width:100%;
-}
 #resize{
-	padding-left:0%;
-	padding-right:2%;
 	width:100%;
-	margin-top:2%;
+	margin-top:0%;
 	padding:4%;
 	background-image:url("img16.jpg");
 	background-size:cover;
@@ -52,7 +53,7 @@
 }
 #ctr{
 	padding-left:10%;
-	padding-right:10%;
+	padding-right:7%;
 	margin-top:2%;
 	background-size:cover;
 	padding:5%;
@@ -77,13 +78,14 @@
   position: relative;
   display: inline-block;
   width:100%;
+  align-content:left;
 }
 .dropdown-content{
 display:none;
 position:relative;
 background:none;
 color:white;
-  width:absolute;
+  width:100%;
   text-align:center;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 5px 5px;
