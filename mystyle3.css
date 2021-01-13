@@ -5,10 +5,13 @@
     overflow: hidden;
     margin-top: -6px;
 	position:relativee;
-	margin-left:30%;
+	margin-left:20%;
 }
 .navbar{
 
 	display:block;
 	position:relative;
+}
+#rell{
+	width:relative;
 }
