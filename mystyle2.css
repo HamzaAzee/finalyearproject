@@ -41,8 +41,6 @@
 }
 .nav{
 	text-align:center;
-	margin-right:40%;
-	float:center;
 }
 a{
 	color:black;
@@ -68,20 +66,31 @@ background-color:indigo;
 }
 #setting{
 	margin:auto;
-	background-image:url("img19.jpg");
-	padding:30%;
+	background-color:lavenderblush;
 	background-size:cover;
+    width:relative;
+	margin-top:30%;
+}
+#move{
+	margin-left:50%;
+	margin-bottom:2%;
+}
+#sid{
+	text-align:left;
+	color:Hotpink;
+	font-family:arial rounded mt bold;
+	font-weight:bold;
 }
 #resize{
 	width:100%;
-	margin-top:0%;
+	margin-top:6%;
 	padding:4%;
 	background-image:url("img16.jpg");
 	background-size:cover;
 	}
 	#none{
 		background-image:none;
-		
+		margin-top:5%;
 	}
 	.row{
 		background-image:url("img17.jpg");
