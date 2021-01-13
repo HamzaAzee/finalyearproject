@@ -16,12 +16,15 @@
 }
 .navbar-nav{
 	float:right;
+		background-color:indigo;
 }
 .navbar{
 width:100%;	
 }
+
 .container{
 	width:100%;
+	margin-right:10%;
 }
 #teenteen{
 	background-color:mediumspringgreen;
