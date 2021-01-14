@@ -69,11 +69,29 @@ background-color:indigo;
 	background-color:lavenderblush;
 	background-size:cover;
     width:100%;
-	margin-top:30%;
+	margin-top:10%;
 }
 #move{
 	margin-left:30%;
 	margin-bottom:2%;
+}
+#movefrwd{
+	margin-left:38.5%;
+	margin-bottom:2%;
+}
+#movefrwd2{
+    margin-left:2%;
+	margin-bottom:2%;
+}
+#movefrwd3{
+    margin-left:2%;
+	margin-bottom:2%;
+}
+#move3{
+	margin-left:40%;
+	margin-bottom:2%;
+	background-color:lightblue;
+	border-radius:15px;
 }
 #sid{
 	text-align:left;
