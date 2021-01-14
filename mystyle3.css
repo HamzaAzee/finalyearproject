@@ -11,6 +11,9 @@
 	display:block;
 	position:relative;
 }
+#nv{
+		background:indigo;
+}
 #move4{
 		margin-left:35%;
 	margin-bottom:2%;
@@ -35,7 +38,7 @@
 
 }
 #rell{
-	width:relative;
+	width:100%;
 	background-color:indigo;
 }
 #resp{
