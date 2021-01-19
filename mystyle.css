@@ -1,0 +1,264 @@
+.description{
+		text-align:center;
+	    font-weight:bold;
+		margin-top:10%;
+		font-family:Arial rounded mt bold;
+	 }
+	 .description2{
+		text-align:center;
+	    font-weight:bold;
+		margin-top:10%;
+		font-family:Arial rounded mt bold;
+	 }
+	 .align{
+		 font-family:times new roman;
+		 font-weight:bold;
+		 color:cyan;
+		 font-size:500%;
+		 text-shadow:4px 4px 8px #000000;
+	 }
+	 .collapse{
+		 float:right;
+	 }
+	 
+	 #a{
+		 font-family:Arial rounded mt bold;
+		 color:hotpink;
+		 text-shadow:4px 4px 8px #000000;
+		 font-weight:bold;
+		 font-size:200%;
+	 }
+
+	 .align2{
+		 font-family:times new roman;
+		 font-weight:bold;
+		 color:cyan;
+		 text-align:justify;
+		 text-shadow:4px 4px 8px #000000;
+	 }
+.font{ 
+	font-weight:bold;
+	font-family:times new roman;
+	}
+	.more{
+	font-weight:bold;
+	text-align:center;
+	font-family:calibri;
+	}
+	
+	.btn-info{
+	font-weight:bold;
+	padding:1%;
+	background-color:indigo;
+	border-radius:25px;
+	}
+	.btn-info:hover{
+	color:black;
+	background-color:white;
+	width:40%;
+	height:60%;
+	}
+	.container{
+		padding:0%;	
+	}
+	.w2-container{
+		padding:5%;
+		background:indigo;
+	}
+	.newsec{
+	margin:2%;
+	color:Indigo;
+	font-weight:bold;
+	}
+	.w3-container{
+	padding-left:10%;
+	padding-right:10%;
+	margin-top:0%;
+	background-image:url("img13.jpg");
+	background-size:cover;
+	}
+	.bground{
+	background:LavenderBlush;
+	}
+	.footr{
+	column-count:2;
+	padding:6%;
+	background:black;
+	color:white;
+	font-weight:bold;
+	}
+	.end{
+	background:black;
+	text-align:center;
+	color:white;
+	}
+	#pic{
+	border-radius:50%;
+	}
+	.bground2{
+	background:Midnightblue;
+	color:white;
+	align-content:center;
+	}
+	.col-md-2{
+	float:left;
+	width:33%;
+	padding:3%;
+	align-content:center;
+	}
+	.container-fluid{
+		width:100%;
+		height:200%;
+		background-color:transparent;
+	}
+	.navbar{
+		background-color:indigo;
+		color:white;
+	}
+	.field{
+		width:68%;
+		height:100%;
+		margin:auto;
+		margin-top:0%;
+		margin-bottom:auto;
+
+	}
+	.hovr:hover{
+		color:white;
+		background-color:hotpink;
+	}
+	#clr{
+		font-family:arial rounded mt bold;
+		color:white;
+		width:120%;
+		height:4%;
+		text-align:center;
+	}
+	#clr:hover{
+		color:white;
+		background-color:hotpink;
+	}
+	#clr2{
+		font-family:arial rounded mt bold;
+		color:khaki;
+		font-weight:bold;
+	}
+	#one{
+		width:90%;
+		height:10%;
+		background:white;
+		border-radius:10px;
+		float:left;
+		background:ghostwhite;
+	}
+	#one:hover{
+	color:white;
+	background-color:black;
+	}
+	#same{
+		background:url("img13.jpg");
+		background-repeat:no-repeat;
+		background-size:100%, 100%;
+	}
+	#white{
+		background:url("img13.jpg");
+		width:100%;
+		background-color:transparent;
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+	#btn-danger{
+		width:30%;
+		height:30%;
+		font-family:berlin sans fb demi;
+		font-weight:bold;
+		border-radius:25px;
+		margin-left:34%;
+		margin-top:10%;
+		margin-bottom:10%;
+	}
+	#btn-danger:hover{
+	color:white;
+	background-color:orange;
+	}
+	#btn-success{
+		width:30%;
+		height:30%;
+		font-family:berlin sans fb demi;
+		font-weight:bold;
+		border-radius:25px;
+		margin-left:34%;
+		margin-top:1%;
+		margin-bottom:10%;
+	}
+	#btn-success:hover{
+	color:white;
+	background-color:springgreen;
+	}
+		#btn-scs{
+		width:30%;
+		height:30%;
+		font-family:berlin sans fb demi;
+		font-weight:bold;
+		border-radius:25px;
+		margin-left:24%;
+		margin-top:3%;
+		margin-bottom:4%;
+	}
+	#btn-scs:hover{
+	color:white;
+	background-color:springgreen;
+	}
+	#design{
+		font-weight:bold;
+		font-family:times new roman;
+		margin:auto;
+		margin:0.5%;
+		width:10%;
+		float:left;
+		color:lightcyan;
+		text-shadow:4px 4px 8px #000000;
+	}
+	#design2{
+		font-weight:bold;
+		font-family:times new roman;
+		margin:auto;
+		margin:0.5%;
+		width:10%;
+		float:left;
+		text-shadow:4px 4px 8px #000000;
+		color:white;
+	}
+	#design3{
+		color:white;
+		font-weight:bold;
+		font-family:times new roman;
+		margin:auto;
+		text-shadow:4px 4px 8px #000000;
+		margin:0.5%;
+		width:10%;
+		float:left;
+	}
+	.carousel-inner{
+    height: 20%;
+    overflow: hidden;
+    width: 100%;
+   } 
+    .carousel-inner img{
+    width: 100%;  
+   }
+   .navbar-text{
+	   margin-left:20%;
+   }
+   #cntr{
+	   margin-left:40%;
+   }
+#largest{
+	margin:auto;
+	margin-top:3%;
+	text-align:center;
+	font-family:Arial black;
+	font-weight:bold;
+	color:khaki;
+	 text-shadow:4px 4px 8px #000000;
+}

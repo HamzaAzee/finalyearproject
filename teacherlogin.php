@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title> Index</title>
+ <title> Teacher Login</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet"> 
+ <link href="css/style.css" rel="stylesheet"> 
 <link href="mystyle.css" rel="stylesheet">
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -14,7 +14,7 @@
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top" > 
 <div class="container">
-<a href="adminlogin.html" class="navbar-brand" id="a">Admin Pannel</a>
+<a class="navbar-brand" id="a">UoD E-Portal<br>Teacher Login</a>
 <button class="navbar-toggle"  data-toggle ="collapse" data-target= ".navHeaderCollapse"  >
  <span class="icon-bar"> </span>
  <span class="icon-bar"> </span>
@@ -24,7 +24,7 @@
 <div class="collapse navbar-collapse  navHeaderCollapse">
 <ul class="nav navbar-nav ">
 <li class="hovr"> <a href="index.html"> Home </a> </li>
-<li class="hovr"> <a href="#jump"> login </a> </li>
+
 <li class="dropdown"> 
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Social Media <b class="caret"> </b> </a> 
 		<ul class="dropdown-menu">
@@ -35,9 +35,9 @@
 		</ul>
 
 </li>
-<li class="hovr"> <a href="about.html"> About </a> </li>
+<li class="hovr"> <a href="tli.html"> About </a> </li>
 <li class="hovr"> <a href="contact.html"> Contact Us </a> </li>
-<li class="hovr"> <a href="teacherlogin.html"> Teacher Login </a> </li>
+
 <li class="hovr"> <a href="teacherlogin.html"> LogOut </a> </li>
 </ul>
 		</div> <!-- div nav collapse -->
@@ -45,37 +45,29 @@
 </div><br><br><br> <!-- div navbar -->
 <div class="container-fluid">
 
-
-<div class="w3-container">
-
-<form class="field" method="post" action="sregistration.php">
+		<center>
+		<div class="w3-container">
+<form class="field" method="post" action="">
 <h1 id="largest">University Of Denmark<br><br>E-Portal </h1>
+<h2 class="align">Sign-in Here</h2>
 <div class="field">
-<label id="design">Username</label>
-
-<input type="text" name="user" id="one" class="form-control" placeholder="Enter Username" />
+<label id="design3">Username</label>
+<input type="text" name="username" id="one" class="form-control" placeholder="Enter Username" />
 </div>
 <br>
+<br>
 <div class="field">
-<label id="design">Email</label>
-<input type="email" name="email" id="one" class="form-control" placeholder="Enter Username" />
+<label id="design3">Password</label>
+<input type="password" name="username" id="one" class="form-control" placeholder="Enter Username" />
 </div><br>
-<div class="field">
-<label id="design">Password</label>
-<input type="password" name="password" id="one" class="form-control" placeholder="Enter Username" />
-</div><br>
-
-<br><br><br>
+<br><br><br><br>
 <div>
-<button href="#jump" type="submit" class="btn btn-danger" id="btn-danger">Join Now</button>
+<button href="#" type="submit" class="btn btn-success" id="btn-scs">Sign-In</button>
+</div></form>
 </div>
-</form><br>
-</div>
-</div>
-<br>
-<br>
-<div class="description">
-			 <h3 style="font-size:200%;color:black">Educating Those Who Serves</h3>
+		</center>
+<div class="description2">
+			 <h3 style="font-family:;font-size:200%;color:black">Educating Those Who Serves</h3>
                 
  
                   <p style="font-size:120%;color:black" class="font">"American Military University (AMU), founded in 1991 by a Marine Corps officer,<br> provides military personnel with portable, relevant, and affordable education.<br> Given our commitment to affordability, we believe our servicemembers, in particular,<br> should have the opportunity to advance their education without financial burden.<br> Explore benefits by branch: Air Force, Army, Coast Guard, Marines, Navy, Spouses, or Veterans."<br><br></p>
@@ -102,7 +94,7 @@
                     	<p> The privilege of a university education is a great one; the more widely it is extended the better for any country</p>
                     	<a href="#" class="btn btn-info">Read More </a>
                 </div>
-                
+               
             	<div class="col-md-2">
                 <img class="img-responsive img-circle" src="pic4.jpg">
                 	<h3> <a href="https://www.popularmechanics.com/military/weapons/a19138318/how-guns-work/">Faculty of Law</a> </h3>  
@@ -120,58 +112,8 @@
 			</div>
 		</div></div></div></div>
 		</center>
-		<center>
-		<div class="w2-container" id="jump">
-<form class="field" method="post" action="svalidation.php">
-<h2 class="align2">Sign-in Here</h2>
-<div class="field">
-<label id="design2">Username</label>
-<input type="text" name="user" id="one" class="form-control" placeholder="Enter Username" />
-</div>
-<br>
-<br>
-<div class="field">
-<label id="design2">Password</label>
-<input type="password" name="password" id="one" class="form-control" placeholder="Enter Username" />
-</div><br>
-<br><br><br><br>
-<div>
-<button href="" type="submit" class="btn btn-success" id="btn-scs">Log-In</button>
-</div></form>
-</div>
-		</center>
-		<center>
-		<div class="bground2">
-		<div class="container">
-		<div class="newsec">
-<h2 style="text-align:center;color:lightyellow;font-family:RedSerif;">Our Students Are First Priority</h2>
-</div>
-        	<div class="row">
-            	<div class="col-md-2">
-                <img class="img-responsive img-circle" src="pic5.jpg">
-                	<h3> Law</h3> 
-                    	<p> The privilege of a university education is a great one; the more widely it is extended the better for any country</p>
-                    	<p style="font-weight:bold;font-family:broadway">Michael Corleone</p>
-                        <a href="#" class="btn btn-info">Read More </a>
-                </div>
-                <div class="col-md-2">
-                    <img class="img-responsive img-circle" src="pic6.jpg">
-                	<h3> Deep Physics</h3> 
-          
-                    	<p>It is not clear that intelligence has any long-term survival value. Bacteria, and other single cell organisms, will live on, if all other life on Earth is wiped out by our actions.</p>
-                        <p style="font-weight:bold;font-family:broadway">Stephen Hawking</p>
-						<a href="#" class="btn btn-info">Read More </a>
-                </div>
-            <div class="col-md-2">
-                    <img class="img-responsive img-circle" src="pic7.jpg">
-                    	<h3>CREATIVITY</h3>
-                    	<p>It is the supreme art of the teacher to awaken joy in creative expression and knowledge.</p>
-                        <p style="font-weight:bold;font-family:broadway">Albert Einstine</p>
-						<a href="#" class="btn btn-info">Read More </a>
-                </div>
-			</div>
-        </div>
-		</div></center>
+
+		
 <!-- for footer
 <div class="navbar navbar-default navbar-fixed-bottom" >
 <div class="container">
