@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["user"]))
-header("location:loggin.html");
+header("location:adminlogin.html");
 else
 {
 ?>
@@ -26,7 +26,7 @@ else
             <img src="#" class="img-fluid">
       </div>
 </a>
-<a class="navbar-brand" id="a">Welcome<br>Dr. Waheed Anwar</a>
+<a class="navbar-brand" id="a">Welcome<br>Admin</a>
 <button class="navbar-toggle"  data-toggle ="collapse" data-target= ".navHeaderCollapse"  >
  <span class="icon-bar"> </span>
  <span class="icon-bar"> </span>
@@ -52,9 +52,9 @@ else
 				   
 				   <span><a id="size">Settings</a></span>
 				   <div class="dropdown-content">
-				   <a href="tliimg.html">Update Profile Image</a> <br>   <!--page required-->
-				   <a href="tchrpasswordreset.html">Reset Password</a>       <!--page required-->
-				   <a href="tchrreport.html">Report Complaint</a>       <!--page required-->
+				   <a href="astudent.php">Students</a> <br>   <!--page required-->
+				   <a href="astaff.php">Staff</a>   <br>    <!--page required-->
+				   <a href="tchrreport.html">Reported Complaints</a>       <!--page required-->
 				   </ul>
 				   </div>
 				</div>
@@ -67,30 +67,14 @@ else
 				    
 				   <span><a id="size">Perform Duties</a></span>
 				   <div class="dropdown-content">
-				   <a href="quiz.html">Post Quiz</a> <br>   <!--page required-->
-				   <a href="assignment.html">Post Assignment</a> <br> <!--page required-->
-				   <a href="tannouncement.html">Announcements</a>       <!--page required-->
+				   <a href="#">Display ALL</a> <br>   <!--page required-->
+				   <a href="aannouncement.html">Announcements</a>       <!--page required-->
 				   </ul>
 				   </div>
 				
 			
 </div><br><br>
-<div class="row">
-<div class="container" id="ctr">
-				<ul class="dropdown">
-                   <div class="container" id="teenteen">
-				    
-				   <span><a id="size">Event Log</a></span>
-				   <div class="dropdown-content">
-				   <a href="#">-------</a> <br>   <!--page required-->
-				   <a href="#">-------</a> <br> <!--page required-->
-				   <a href="#">-------</a>       <!--page required-->
-				   </ul>
-				   </div>
-				   </div>
-				
-				
-</div></div>
+
 </div></div>
 <div class="footr">
 <div>

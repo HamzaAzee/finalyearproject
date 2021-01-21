@@ -1,29 +1,20 @@
-<?php
-session_start();
-if(!isset($_SESSION["user"]))
-header("location:adminlogin.html");
-else
-{
-?>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Announcements By Admin</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
- <link href="css/style.css" rel="stylesheet">  
-<link href="mystyle.css" rel="stylesheet">
+  
+  <link href="css/style.css" rel="stylesheet"> 
 <link href="mystyle2.css" rel="stylesheet">
 <link href="mystyle3.css" rel="stylesheet">
+<link href="mystyle.css" rel="stylesheet">
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" > 
+<div class="navbar navbar-inverse navbar-static-top" id="nv"> 
 <div class="container">
-<a class="navbar-brand" id="a">Announcement</a>
+<a class="navbar-brand" id="a">Quiz</a>
 <button class="navbar-toggle"  data-toggle ="collapse" data-target= ".navHeaderCollapse"  >
  <span class="icon-bar"> </span>
  <span class="icon-bar"> </span>
@@ -32,31 +23,26 @@ else
  
 <div class="collapse navbar-collapse  navHeaderCollapse">
 <ul class="nav navbar-nav ">
-<li class="hovr"> <a href="ali.html"> Back </a> </li>
+<li class="hovr"> <a href="tli.html"> Back </a> </li>
 
 </ul>
 		</div> <!-- div nav collapse -->
 	</div> <!-- div container -->
-</div> <!-- div navbar -->
-
+</div><!-- div navbar -->
 <div class="container-fluid" id="resize">
-<div class="container" id="mtop">
+<div class="container" id="none">
 <div class="container" id="setting">
-<h1 id="sid">Announcement Below:</h1>
-<label id="frwd">Announcement:</label><br>
-<textarea name="textbox" id="report"></textarea><br><br>
+<h1 id="sid">Upload Quiz:</h1>
+<input type="file" name="file" id="move3"/><br>
+<input type="datetime-local" name="date" id="move3"/><br>
+<input type="datetime-local" name="date" id="move3"/><br>
 <button type="submit" class="btn btn-success" name="submit" id="move">Upload</button>
+<button type="submit" class="btn btn-danger" name="Update" id="moved">Update</button>
 </div>
 </div></div>
 
-		
-<!-- for footer
-<div class="navbar navbar-default navbar-fixed-bottom" >
-<div class="container">
-<p class="navbar-text pull-left">  Designed by Hamza Azeem </p>
-<a href="http://www.hamzaazeem009.atwebpages.com" class="navbar-btn btn-danger btn pull-right"> VISIT MY SITE </a>
-</div>
-</div> -->
+
+
 <div class="footr">
 <div>
 <h5>Contact Info:</h5>
@@ -74,8 +60,6 @@ else
 <div class="end">
 <h6>Privacy Policy</h6>
 </div>
+
 </body>
 </html>
-<?php
-}
-?>

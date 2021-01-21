@@ -35,7 +35,7 @@
 		</ul>
 
 </li>
-<li class="hovr"> <a href="#"> About </a> </li>
+<li class="hovr"> <a href="tli.html"> About </a> </li>
 <li class="hovr"> <a href="contact.html"> Contact Us </a> </li>
 
 <li class="hovr"> <a href="teacherlogin.html"> LogOut </a> </li>

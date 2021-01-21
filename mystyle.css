@@ -63,7 +63,9 @@
 	}
 	.w2-container{
 		padding:5%;
-		background:indigo;
+		background-image:url("img13.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
 	}
 	.newsec{
 	margin:2%;

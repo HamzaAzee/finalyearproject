@@ -12,9 +12,9 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-static-top" id="nv"> 
+<div class="navbar navbar-inverse navbar-fixed-top" id="rell" > 
 <div class="container">
-<a class="navbar-brand" id="a">Assignment</a>
+<a class="navbar-brand" id="a">Reset Password</a>
 <button class="navbar-toggle"  data-toggle ="collapse" data-target= ".navHeaderCollapse"  >
  <span class="icon-bar"> </span>
  <span class="icon-bar"> </span>
@@ -22,27 +22,26 @@
  </button>
  
 <div class="collapse navbar-collapse  navHeaderCollapse">
+
 <ul class="nav navbar-nav ">
-<li class="hovr"> <a href="tli.html"> Back </a> </li>
+<li class="hovr"> <a href="index.html"> Login </a> </li>
 
 </ul>
 		</div> <!-- div nav collapse -->
 	</div> <!-- div container -->
 </div><!-- div navbar -->
-<div class="container-fluid" id="resize">
-<div class="container" id="none">
-<div class="container" id="setting">
-<h1 id="sid">Upload Assignment:</h1>
-<input type="file" name="file" id="move3"/><br>
-<input type="datetime-local" name="date" id="move3"/><br>
-<input type="datetime-local" name="date" id="move3"/><br>
-<button type="submit" class="btn btn-success" name="submit" id="move">Upload</button>
-<button type="submit" class="btn btn-danger" name="Update" id="moved">Update</button>
+
+<div class="container" id="on">
+<div class="container" id="resp">
+<form action="pwdrst.php" method="POST" enctype="multipart/form-data">
+<label id="dsgn">Username</label>
+<input type="text" name="username" id="anim" class="form-control" placeholder="Enter Username" /><br>
+<label id="dsgn">Password</label>
+<input type="password" name="password" id="anim" class="form-control" placeholder="password" /><br>
+<button type="submit" class="btn btn-danger" name="reset" id="btn-dngr">Reset</button>
+</form>
 </div>
-</div></div>
-
-
-
+</div>
 <div class="footr">
 <div>
 <h5>Contact Info:</h5>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["user"]))
-header("location:loggin.html");
+header("location:teacherlogin.html");
 else
 {
 ?>
