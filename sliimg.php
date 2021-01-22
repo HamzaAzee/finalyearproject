@@ -29,7 +29,7 @@ header("location:index.html");
  
 <div class="collapse navbar-collapse  navHeaderCollapse">
 <ul class="nav navbar-nav ">
-<li class="hovr"> <a href="sli.html"> Back </a> </li>
+<li class="hovr"> <a href="sli.php"> Back </a> </li>
 
 </ul>
 		</div> <!-- div nav collapse -->

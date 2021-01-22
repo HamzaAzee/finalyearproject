@@ -1,0 +1,23 @@
+<?php
+include"connection.php";
+session_start();
+
+$sid=$_POST['staffid'];
+$name=$_POST['name'];
+$pass=$_POST['password'];
+$dsg=$_POST['designation'];
+$dpt=$_POST['department'];
+$qual=$_POST['qualification'];
+
+$s="select * from usertable where staffid = '$sid'";
+$result = mysqli_query($db, $s);
+
+$num= mysqli_num_rows($result);
+	$reg = "UPDATE stafftable SET name='$name', password='$pass', designation='$dsg', department='$dpt', qualification='$qual' WHERE staffid='$sid'";
+	if(mysqli_query($db, $reg)){
+	header("location:updatestudent.php");
+	echo'<script>alert("Details Updates!")</script>';
+}else{
+	echo"error";
+}
+?>

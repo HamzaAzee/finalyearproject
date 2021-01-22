@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['staffid'])){
+header("location:teacherlogin.php");
+}
+?>
 <html>
 <head>
 <meta charset="utf-8">
@@ -23,7 +29,7 @@
  
 <div class="collapse navbar-collapse  navHeaderCollapse">
 <ul class="nav navbar-nav ">
-<li class="hovr"> <a href="sli.html"> Back </a> </li>
+<li class="hovr"> <a href="tli.php"> Back </a> </li>
 
 </ul>
 		</div> <!-- div nav collapse -->
@@ -32,9 +38,11 @@
 <div class="container-fluid" id="resize">
 <div class="container" id="none">
 <div class="container" id="setting">
+<form action="tmg.php" method="POST" enctype="multipart/form-data">
 <h1 id="sid">Update Your Profile Image:</h1>
-<input type="file" name="file" id="move"/><br>
-<button type="submit" class="btn btn-success" name="submit" id="move">Upload</button>
+<input type="file" name="image" id="move"/><br>
+<button type="submit" class="btn btn-success" name="upload" id="move">Upload</button>
+</form>
 </div>
 </div></div>
 

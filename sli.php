@@ -50,7 +50,7 @@ else{
 <ul class="nav navbar-nav ">
 <li class="hovr"> <a href="index.html"> Home </a> </li>
 
-<li class="hovr"> <a href="teacherlogin.html"> LogOut </a> </li>
+<li class="hovr"> <a action="logout.php"> LogOut </a> </li>
 </ul>
 		</div> <!-- div nav collapse -->
 	</div> <!-- div container -->
@@ -80,7 +80,7 @@ else{
 				   <div class="dropdown-content">
 				   <a href="#">Subjects</a> <br>   <!--page required-->
 				   <a href="slifeeimg.php">Upload Paid Fee Challan</a> <br> <!--page required-->
-				   <a href="report.html">Report Complaint</a>       <!--page required-->
+				   <a href="report.php">Report Complaint</a>       <!--page required-->
 				   </ul>
 				   </div>
 				

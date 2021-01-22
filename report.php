@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+header("location:index.html");
+}
+?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -25,7 +30,7 @@
  
 <div class="collapse navbar-collapse  navHeaderCollapse">
 <ul class="nav navbar-nav ">
-<li class="hovr"> <a href="sli.html"> Back </a> </li>
+<li class="hovr"> <a href="sli.php"> Back </a> </li>
 
 </ul>
 		</div> <!-- div nav collapse -->

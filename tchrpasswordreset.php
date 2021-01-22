@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['staffid'])){
+header("location:teacherlogin.php");
+}
+?>
 <html>
 <head>
 <meta charset="utf-8">

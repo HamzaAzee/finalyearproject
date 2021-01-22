@@ -51,7 +51,7 @@ else
 <label id="frwd2">Email</label>
 <input type="email" name="email" id="move4" placeholder="Enter Username" />
 <label id="frwd2">Password</label>
-<input type="password" name="password" id="move4" placeholder="Enter Username" />
+<input type="password" name="password" id="move4" placeholder="Enter Password" />
 <label id="frwd2">Program:</label><br>
 <input type="text" name="program" id="move4" placeholder="Program"></textarea><br>
 <label id="frwd2">Semester:</label><br>
