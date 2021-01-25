@@ -54,7 +54,7 @@ else
 				   <div class="dropdown-content">
 				   <a href="astudent.php">Students</a> <br>   <!--page required-->
 				   <a href="astaff.php">Staff</a>   <br>    <!--page required-->
-				   <a href="tchrreport.html">Reported Complaints</a>       <!--page required-->
+				   <a href="aannouncementstd.php">Announcemets For Students</a>       <!--page required-->
 				   </ul>
 				   </div>
 				</div>
@@ -67,8 +67,9 @@ else
 				    
 				   <span><a id="size">Perform Duties</a></span>
 				   <div class="dropdown-content">
-				   <a href="#">Display ALL</a> <br>   <!--page required-->
-				   <a href="aannouncement.html">Announcements</a>       <!--page required-->
+				   <a href="showall.php">Display ALL Students</a> <br>   <!--page required-->
+                   <a href="showallstaff.php">Display ALL Staff</a> <br>   <!--page required-->
+				   <a href="aannouncement.php">Announcements For Staff</a>       <!--page required-->
 				   </ul>
 				   </div>
 				
