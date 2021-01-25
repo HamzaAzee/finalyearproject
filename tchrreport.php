@@ -40,10 +40,12 @@ header("location:teacherlogin.php");
 <div class="container-fluid" id="resize">
 <div class="container" id="mtop">
 <div class="container" id="setting">
+<form action="tchrreportsubmit.php" method="POST" enctype="multipart/form-data">
 <h1 id="sid">Report Complaint Below:</h1>
 <label id="frwd">Report complaint:</label><br>
 <textarea name="textbox" id="report"></textarea><br><br>
 <button type="submit" class="btn btn-success" name="submit" id="move">Upload</button>
+</form>
 </div>
 </div></div>
 
