@@ -3,6 +3,7 @@ session_start();
 if(!isset($_SESSION['staffid'])){
 header("location:teacherlogin.php");
 }
+?>
 <html>
 <head>
 <meta charset="utf-8">
@@ -28,7 +29,7 @@ header("location:teacherlogin.php");
  
 <div class="collapse navbar-collapse  navHeaderCollapse">
 <ul class="nav navbar-nav ">
-<li class="hovr"> <a href="tli.html"> Back </a> </li>
+<li class="hovr"> <a href="tli.php"> Back </a> </li>
 
 </ul>
 		</div> <!-- div nav collapse -->
@@ -37,12 +38,14 @@ header("location:teacherlogin.php");
 <div class="container-fluid" id="resize">
 <div class="container" id="none">
 <div class="container" id="setting">
+<form action="tchrreportsubmit.php" method="POST" enctype="multipart/form-data">
 <h1 id="sid">Upload Assignment:</h1>
 <input type="file" name="file" id="move3"/><br>
 <input type="datetime-local" name="date" id="move3"/><br>
 <input type="datetime-local" name="date" id="move3"/><br>
 <button type="submit" class="btn btn-success" name="submit" id="move">Upload</button>
 <button type="submit" class="btn btn-danger" name="Update" id="moved">Update</button>
+</form>
 </div>
 </div></div>
 

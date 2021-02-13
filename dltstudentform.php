@@ -32,7 +32,7 @@ else
  
 <div class="collapse navbar-collapse  navHeaderCollapse">
 <ul class="nav navbar-nav ">
-<li class="hovr"> <a href="ali.html"> Back </a> </li>
+<li class="hovr"> <a href="ali.php"> Back </a> </li>
 
 </ul>
 		</div> <!-- div nav collapse -->
@@ -42,20 +42,16 @@ else
 <div class="container-fluid" id="resize">
 <div class="container" id="mtop">
 <div class="container" id="setting">
+<form class="field" method="POST" action="deletestudent.php"  enctype="multipart/form-data">
 <h1 id="sid">Deal With Students Here:</h1>
-<label id="frwd2">Roll No#:</label><br>
-<input type="text" name="rollno" id="move4" placeholder="Roll No#"></textarea><br>
-<label id="frwd2">Name:</label><br>
-<input type="text" name="name" id="move4" placeholder="Name"></textarea><br>
-<label id="frwd2">Program:</label><br>
-<input type="text" name="program" id="move4" placeholder="Program"></textarea><br>
-<label id="frwd2">Semester:</label><br>
-<input type="text" name="semester" id="move4" placeholder="Semester"></textarea><br>
-<label id="frwd2">CGPA:</label><br>
-<input type="text" name="cgpa" id="move4" placeholder="CGPA"></textarea><br><br>
-<button type="submit" class="btn btn-success" name="submit" id="movefrwd">Submit</button>
-<button type="submit" class="btn btn-danger" name="submit" id="movefrwd2">Submit</button>
-<button type="submit" class="btn btn-warning" name="submit" id="movefrwd3">Submit</button>
+
+<label id="frwd2">Username</label>
+<input type="text" name="user" id="move4" placeholder="Enter Username" />
+
+<center>
+<button type="submit" class="btn btn-primary" name="delete" id="movefrwd2" >DELETE</button>
+</center>
+</form>
 </div>
 </div></div>
 
