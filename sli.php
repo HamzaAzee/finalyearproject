@@ -1,9 +1,21 @@
 <?php
 session_start();
-if(!isset($_SESSION["user"]))
-header("location:loggin.html");
-else
-{
+if(!isset($_SESSION['username'])){
+header("location:index.html");
+}
+else{
+	$username=$_SESSION['username'];
+	$db = mysqli_connect("localhost", "root", "", "userregistration2");
+	$sql = "SELECT *  FROM usertable WHERE name='$username'";
+	$result=mysqli_query($db,$sql);
+	if(mysqli_num_rows($result)>0){
+		$row=mysqli_fetch_assoc($result);
+		$image=$row['pics'];
+		$imagePath="images/".$image;
+	}
+	
+	
+}
 ?>
 <html>
 <head>
@@ -19,14 +31,14 @@ else
 
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" id="rell"> 
+<div class="navbar navbar-inverse navbar-fixed-top" > 
 <div class="container">
-<a class="navbar-brand" href="/">
+<a class="navbar-brand" href="sliimg.php">
       <div class="logo-image">
-            <img src="#" class="img-fluid">
+            <img style="width: 71px;" src="<?php echo $imagePath ?>" class="img-fluid">
       </div>
 </a>
-<a class="navbar-brand" id="a">Welcome<br>Dr. Waheed Anwar</a>
+<a class="navbar-brand" id="a">Welcome<br><?php echo $_SESSION['username'] ?></a>
 <button class="navbar-toggle"  data-toggle ="collapse" data-target= ".navHeaderCollapse"  >
  <span class="icon-bar"> </span>
  <span class="icon-bar"> </span>
@@ -38,7 +50,7 @@ else
 <ul class="nav navbar-nav ">
 <li class="hovr"> <a href="index.html"> Home </a> </li>
 
-<li class="hovr"> <a href="#"> LogOut </a> </li>
+<li class="hovr"> <a href="logout.php"> LogOut </a> </li>
 </ul>
 		</div> <!-- div nav collapse -->
 	</div> <!-- div container -->
@@ -52,9 +64,8 @@ else
 				   
 				   <span><a id="size">Settings</a></span>
 				   <div class="dropdown-content">
-				   <a href="tliimg.html">Update Profile Image</a> <br>   <!--page required-->
-				   <a href="tchrpasswordreset.html">Reset Password</a>       <!--page required-->
-				   <a href="tchrreport.html">Report Complaint</a>       <!--page required-->
+				   <a href="sliimg.php">Update Profile Image</a> <br>   <!--page required-->
+				   <a href="passwordreset.php">Reset password</a>       <!--page required-->
 				   </ul>
 				   </div>
 				</div>
@@ -65,11 +76,11 @@ else
 				<ul class="dropdown">
                    <div class="container" id="dodo">
 				    
-				   <span><a id="size">Perform Duties</a></span>
+				   <span><a id="size">Status</a></span>
 				   <div class="dropdown-content">
-				   <a href="quiz.html">Post Quiz</a> <br>   <!--page required-->
-				   <a href="assignment.html">Post Assignment</a> <br> <!--page required-->
-				   <a href="tannouncement.html">Announcements</a>       <!--page required-->
+				   <a href="#">Subjects</a> <br>   <!--page required-->
+				   <a href="slifeeimg.php">Upload Paid Fee Challan</a> <br> <!--page required-->
+				   <a href="report.php">Report Complaint</a>       <!--page required-->
 				   </ul>
 				   </div>
 				
@@ -82,9 +93,9 @@ else
 				    
 				   <span><a id="size">Event Log</a></span>
 				   <div class="dropdown-content">
-				   <a href="#">-------</a> <br>   <!--page required-->
-				   <a href="#">-------</a> <br> <!--page required-->
-				   <a href="#">-------</a>       <!--page required-->
+				   <a href="#">---------</a> <br>   <!--page required-->
+				   <a href="#">---------</a> <br> <!--page required-->
+				   <a href="#">---------</a>       <!--page required-->
 				   </ul>
 				   </div>
 				   </div>
@@ -111,6 +122,3 @@ else
 </div>
 </body>
 </html>
-<?php
-}
-?>

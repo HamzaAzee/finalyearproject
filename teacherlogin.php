@@ -35,7 +35,7 @@
 		</ul>
 
 </li>
-<li class="hovr"> <a href="#"> About </a> </li>
+<li class="hovr"> <a href="tli.html"> About </a> </li>
 <li class="hovr"> <a href="contact.html"> Contact Us </a> </li>
 
 <li class="hovr"> <a href="teacherlogin.html"> LogOut </a> </li>
@@ -47,22 +47,27 @@
 
 		<center>
 		<div class="w3-container">
-<form class="field" method="post" action="staffvalidation.php">
+<form class="field" method="POST" action="staffvalidation.php">
 <h1 id="largest">University Of Denmark<br><br>E-Portal </h1>
 <h2 class="align">Sign-in Here</h2>
 <div class="field">
-<label id="design3">Username</label>
-<input type="text" name="user" id="one" class="form-control" placeholder="Enter Username" />
+<label id="design3">Staff ID:</label>
+<input type="text" name="staffid" id="one" class="form-control" placeholder="Enter Username" />
 </div>
 <br>
 <br>
 <div class="field">
+<label id="design3">Username</label>
+<input type="text" name="username" id="one" class="form-control" placeholder="Enter Username" />
+</div>
+<br><br>
+<div class="field">
 <label id="design3">Password</label>
-<input type="password" name="username" id="one" class="form-control" placeholder="Enter Username" />
+<input type="password" name="password" id="one" class="form-control" placeholder="Enter Username" />
 </div><br>
 <br><br><br><br>
 <div>
-<button href="#" type="submit" class="btn btn-success" id="btn-scs">Sign-In</button>
+<button href="" type="submit" class="btn btn-success" id="btn-scs">Log-In</button>
 </div></form>
 </div>
 		</center>
