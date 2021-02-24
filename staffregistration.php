@@ -8,19 +8,17 @@ $pass=$_POST['password'];
 $dsg=$_POST['designation'];
 $dpt=$_POST['department'];
 $qual=$_POST['qualification'];
-
+$suas=$_POST['subjectassigned'];
 
 $s="select * from stafftable where staffid = '$sid'";
 $result = mysqli_query($db, $s);
 
 $num= mysqli_num_rows($result);
-
-if($num == 1){
-	echo"username already exists";
+	$reg = "INSERT INTO stafftable (staffid, name, password, designation, department, qualification, subjectassigned) VALUES('$sid', '$name', '$pass', '$dsg', '$dpt', '$qual', '$suas')";
+	if(mysqli_query($db, $reg)){
+	header("location:astaff.php");
+	echo'<script>alert("Details Updates!")</script>';
 }else{
-	$reg = "insert into stafftable(staffid, name, password, designation, department, qualification) values ('$sid', '$name', '$pass', '$dsg', '$dpt', '$qual')";
-	mysqli_query($db, $reg);
-	echo"registered";
-	header('location:astaff.php');
+	echo"error ".mysqli_error($db);
 }
 ?>

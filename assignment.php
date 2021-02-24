@@ -38,7 +38,7 @@ header("location:teacherlogin.php");
 <div class="container-fluid" id="resize">
 <div class="container" id="none">
 <div class="container" id="setting">
-<form action="tchrreportsubmit.php" method="POST" enctype="multipart/form-data">
+<form action="postassignment.php" method="POST" enctype="multipart/form-data">
 <h1 id="sid">Upload Assignment:</h1>
 <input type="file" name="file" id="move3"/><br>
 <input type="datetime-local" name="date" id="move3"/><br>

@@ -3,7 +3,7 @@ include"connection.php";
 session_start();
 
 if (isset($_POST['reset'])) {
-$name=$_POST['username'];
+$name = $_SESSION['username'];
 $pass=$_POST['password'];
     
 

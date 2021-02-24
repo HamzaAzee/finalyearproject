@@ -40,14 +40,10 @@ header("location:teacherlogin.php");
 <div class="container" id="on">
 <div class="container" id="resp">
 <form action="passwordresetforstaff.php" method="POST" enctype="multipart/form-data">
-<label id="dsgn">Username</label>
-<input type="text" name="username" id="anim" class="form-control" placeholder="Enter Username" /><br>
+
 <label id="dsgn">Password</label>
-<input type="password" name="password" id="anim" class="form-control" placeholder="Enter password" /><br>
-<label id="dsgn">Re-Enter Password</label>
-<input type="password" name="password" id="anim" class="form-control" placeholder="Re-Enter password" /><br><br>
-<button href="" type="submit" class="btn btn-danger" name="reset" id="btn-dngr">Reset</button>
-</form>
+<input type="password" name="password" id="anim" class="form-control" placeholder="password" /><br>
+<button type="submit" class="btn btn-danger" name="reset" id="btn-dngr">Reset</button></form>
 </div>
 </div>
 <div class="footr">

@@ -14,13 +14,11 @@ $s="select * from usertable where name = '$name'";
 $result = mysqli_query($db, $s);
 
 $num= mysqli_num_rows($result);
-
-if($num == 1){
-	echo"username already exists";
+	$reg = "INSERT INTO usertable (name, rollno, email, password, program, semester, cgpa) VALUES('$name', '$roll', '$eml', '$pass', '$prog', '$sem', '$cgp')";
+	if(mysqli_query($db, $reg)){
+	header("location:astudent.php");
+	echo'<script>alert("Details Updates!")</script>';
 }else{
-	$reg = "insert into usertable(name, rollno, email, password, program, semester, cgpa) values ('$name', '$roll', '$eml', '$pass', '$prog', '$sem', '$cgp')";
-	mysqli_query($db, $reg);
-	echo"registered";
-	header('location:ali.php');
+	echo"error ".mysqli_error($db);
 }
 ?>

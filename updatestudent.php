@@ -32,7 +32,7 @@ else
  
 <div class="collapse navbar-collapse  navHeaderCollapse">
 <ul class="nav navbar-nav ">
-<li class="hovr"> <a href="ali.html"> Back </a> </li>
+<li class="hovr"> <a href="ali.php"> Back </a> </li>
 
 </ul>
 		</div> <!-- div nav collapse -->

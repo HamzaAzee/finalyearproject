@@ -4,7 +4,7 @@ session_start();
 
 $ann=$_POST['announcement'];
 
-$sql="UPDATE usertable SET announcement='$ann'";
+$sql="INSERT INTO usertable(announcement) VALUES('$ann')";
 	if(mysqli_query($db, $sql)){
 	echo"success";
 }else{

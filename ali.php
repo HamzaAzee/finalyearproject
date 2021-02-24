@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["user"]))
-header("location:adminlogin.html");
+header("location:ali.php");
 else
 {
 ?>
@@ -54,7 +54,8 @@ else
 				   <div class="dropdown-content">
 				   <a href="astudent.php">Students</a> <br>   <!--page required-->
 				   <a href="astaff.php">Staff</a>   <br>    <!--page required-->
-				   <a href="aannouncementstd.php">Announcemets For Students</a>       <!--page required-->
+				   <a href="aannouncementstd.php">Announcemets For Students</a> <br> <!--page required-->
+				   <a href="sub.php">Course management</a> <!--page required-->
 				   </ul>
 				   </div>
 				</div>

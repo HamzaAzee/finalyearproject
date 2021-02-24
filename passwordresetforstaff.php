@@ -3,16 +3,16 @@ include"connection.php";
 session_start();
 
 if (isset($_POST['reset'])) {
-$name=$_POST['username'];
+$sid = $_SESSION['staffid'];
 $pass=$_POST['password'];
     
 
-	$reg = "UPDATE usertable SET password='$pass'  WHERE name='$name'";
+	$reg = "UPDATE stafftable SET password='$pass'  WHERE staffid='$sid'";
 	if(mysqli_query($db, $reg)){
-	header('location:sli.php');
+	header('location:tli.php');
 	echo "<script>alert('Password changed')</script>";
 	}else{
-		echo"Wrong username";
+		echo"Wrong staffid";
 	}
 }
 ?>

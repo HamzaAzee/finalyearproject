@@ -40,10 +40,12 @@ header("location:teacherlogin.php");
 <div class="container-fluid" id="resize">
 <div class="container" id="mtop">
 <div class="container" id="setting">
-<h1 id="sid">Announcement Below:</h1>
+<form action="forstudentsannouncements.php" method="POST" enctype="multipart/form-data">
+<h1 id="sid">Announcement For Students Below:</h1>
 <label id="frwd">Announcement:</label><br>
-<textarea name="textbox" id="report"></textarea><br><br>
+<textarea name="announcement" id="report"></textarea><br><br>
 <button type="submit" class="btn btn-success" name="submit" id="move">Upload</button>
+</form>
 </div>
 </div></div>
 

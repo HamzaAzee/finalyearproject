@@ -11,6 +11,7 @@ else{
 	if(mysqli_num_rows($result)>0){
 		$row=mysqli_fetch_assoc($result);
 		$image=$row['pics'];
+		$ann=$row['announcement'];
 		$imagePath="images/".$image;
 	}
 	
@@ -78,7 +79,7 @@ else{
 				    
 				   <span><a id="size">Status</a></span>
 				   <div class="dropdown-content">
-				   <a href="#">Subjects</a> <br>   <!--page required-->
+				   <a href="stsubjects.php">Subjects</a> <br>   <!--page required-->
 				   <a href="slifeeimg.php">Upload Paid Fee Challan</a> <br> <!--page required-->
 				   <a href="report.php">Report Complaint</a>       <!--page required-->
 				   </ul>
@@ -93,9 +94,9 @@ else{
 				    
 				   <span><a id="size">Event Log</a></span>
 				   <div class="dropdown-content">
-				   <a href="#">---------</a> <br>   <!--page required-->
-				   <a href="#">---------</a> <br> <!--page required-->
-				   <a href="#">---------</a>       <!--page required-->
+				   <a href="stassignment.php">Assignments</a> <br>   <!--page required-->
+				   <a href="#">Quiz</a> <br> <!--page required-->
+                   <h4>=> <?php echo $ann ?></h4>       <!--page required-->
 				   </ul>
 				   </div>
 				   </div>

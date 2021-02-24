@@ -32,7 +32,7 @@ else
  
 <div class="collapse navbar-collapse  navHeaderCollapse">
 <ul class="nav navbar-nav ">
-<li class="hovr"> <a href="ali.html"> Back </a> </li>
+<li class="hovr"> <a href="ali.php"> Back </a> </li>
 
 </ul>
 		</div> <!-- div nav collapse -->
@@ -56,6 +56,8 @@ else
 <input type="text" name="department" id="move4" placeholder="Department"></textarea><br>
 <label id="frwd2">Qualification:</label><br>
 <input type="text" name="qualification" id="move4" placeholder="Qualification"></textarea><br>
+<label id="frwd2">Subject assigned:</label><br>
+<input type="text" name="subjectassigned" id="move4" placeholder="Subject assigned"></textarea><br>
 <center>
 <button type="submit" class="btn btn-primary" name="submit" id="movefrwd2" >UPDATE</button>
 </center>

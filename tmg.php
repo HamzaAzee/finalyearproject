@@ -6,13 +6,13 @@ session_start();
 if (isset($_POST['upload'])) {
     $filename = $_FILES["image"]["name"];
     $tempname = $_FILES["image"]["tmp_name"];
-    $username = $_SESSION['username'];
+    $sid = $_SESSION['staffid'];
     $folder = "images/" . $filename;
 
 
     // Get all the submitted data from the form 
     // $sql = "INSERT INTO stafftable (pics) VALUES ('$filename')"; 
-    $sql = "UPDATE stafftable SET pics='$filename'  WHERE name='$username'";
+    $sql = "UPDATE stafftable SET pics='$filename'  WHERE staffid='$sid'";
     // Execute query 
     if (mysqli_query($db, $sql)) {
         if (move_uploaded_file($tempname, $folder)) {
