@@ -5,10 +5,10 @@ if(isset($_POST['delete'])){
 	
 	$sql="DELETE FROM stafftable WHERE staffid='$sid'";
 	if(mysqli_query($db,$sql)){
-		header("location:deletestaffform.php");
+		echo '<script>alert("Staff member deleted")</script>';
 	}
 	else{
-		echo"error ".mysqli_error($db);
+		echo '<script>alert("Request failed")</script>';
 	}
 }
 ?>

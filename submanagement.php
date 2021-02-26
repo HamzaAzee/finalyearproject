@@ -19,7 +19,6 @@ $roll=$_POST['rollno'];
 //}else{ 
 	$reg = "insert into subjecttable(subcode, subname, assignedto, staffid, enrolledstudents, rollno) values ('$suid', '$name', '$asn', '$sid', '$erd', '$roll')";
 	if(mysqli_query($db, $reg))
-	echo"Submitted";
-	header('location:sub.php');
+	echo '<script>alert("Subject added")</script>';
 	
 ?>

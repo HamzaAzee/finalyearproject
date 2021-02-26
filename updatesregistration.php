@@ -16,9 +16,8 @@ $result = mysqli_query($db, $s);
 $num= mysqli_num_rows($result);
 	$reg = "UPDATE usertable SET email='$eml', password='$pass', rollno='$roll', program='$prog', semester='$sem', cgpa='$cgp'  WHERE name='$name'";
 	if(mysqli_query($db, $reg)){
-	header("location:updatestudent.php");
-	echo'<script>alert("Details Updates!")</script>';
+	echo '<script>alert("Student updated successfully")</script>';
 }else{
-	echo"error";
+	echo '<script>alert("Request failed")</script>';
 }
 ?>

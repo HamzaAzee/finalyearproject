@@ -20,7 +20,7 @@ header("location:index.html");
 <body>
 <div class="navbar navbar-inverse navbar-static-top" id="nv"> 
 <div class="container">
-<a class="navbar-brand" id="a">Settings</a>
+<a class="navbar-brand" id="a">Quizes</a>
 <button class="navbar-toggle"  data-toggle ="collapse" data-target= ".navHeaderCollapse"  >
  <span class="icon-bar"> </span>
  <span class="icon-bar"> </span>
@@ -38,8 +38,11 @@ header("location:index.html");
 <div class="container-fluid" id="resize">
 <div class="container" id="none">
 <div class="container" id="setting">
-<form action="submitass.php" method="POST" enctype="multipart/form-data">
+<form action="postassign.php" method="POST" enctype="multipart/form-data">
 <h1 id="sid">Update Your Assignments:</h1>
+<label id="frwd2">Enter subject name</label><br>
+<input type="text" name="subname" id="move4" placeholder="Subject Name"></textarea><br>
+
 <input type="file" name="file" id="move"/><br>
 <button type="submit" class="btn btn-success" name="upload" id="move">Upload</button>
 </form>

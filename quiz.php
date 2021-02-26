@@ -44,7 +44,7 @@ header("location:teacherlogin.php");
 <input type="datetime-local" name="fromdate" id="move3"/><br>
 <input type="datetime-local" name="todate" id="move3"/><br>
 <button type="submit" class="btn btn-success" name="submit" id="move">Upload</button>
-<button type="submit" class="btn btn-danger" name="Update" id="moved">Update</button>
+
 </form>
 </div>
 </div></div>

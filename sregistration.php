@@ -17,8 +17,8 @@ $num= mysqli_num_rows($result);
 	$reg = "INSERT INTO usertable (name, rollno, email, password, program, semester, cgpa) VALUES('$name', '$roll', '$eml', '$pass', '$prog', '$sem', '$cgp')";
 	if(mysqli_query($db, $reg)){
 	header("location:astudent.php");
-	echo'<script>alert("Details Updates!")</script>';
+	echo '<script>alert("Student registered successfully")</script>';
 }else{
-	echo"error ".mysqli_error($db);
+	echo '<script>alert("Request failed")</script>';
 }
 ?>

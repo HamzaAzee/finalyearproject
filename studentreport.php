@@ -10,9 +10,9 @@ if(isset($_POST['report'])){
 	$sql = "UPDATE usertable SET complaints= '$tb' WHERE name='$username'";
 	$result=mysqli_query($db, $sql);
 	if($result){
-		echo"success";
+		echo '<script>alert("Copmlaint reported")</script>';
 	}else{
-		echo"error occured ".mysqli_error($db);
+		echo '<script>alert("Request failed")</script>';
 	}
 }else{
 	mysqli_error($db);

@@ -63,7 +63,7 @@ echo"<td>".$rows['rollno']."</td>";
 echo "<td>";
 ?>
 
-<a href="submitdocs/<?php echo $rows['assignmenta']; ?>" class="img-fluid"><?php echo $rows['assignmenta']; ?></a></td>
+<a href="submit/<?php echo $rows['assignmenta']; ?>" class="img-fluid"><?php echo $rows['assignmenta']; ?></a></td>
 
 </tr>
 <?php

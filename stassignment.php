@@ -67,8 +67,8 @@ echo "<td>";
 <a href="postquiz/<?php echo $rows['assignment']; ?>" class="img-fluid"><?php echo $rows['assignment']; ?></a></td>
 
 
-<td><input type="file" name="file" id="move"/><br>
-<button type="submit" class="btn btn-success" name="submit" id="move">Submit assignment</button></td>
+<td>
+<a type="submit" class="btn btn-success" href="subass.php" id="move">Submit assignment</a></td>
 </tr>
 <?php
 }

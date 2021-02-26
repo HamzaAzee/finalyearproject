@@ -40,7 +40,7 @@ header("location:teacherlogin.php");
 <div class="container-fluid" id="resize">
 <div class="container" id="mtop">
 <div class="container" id="setting">
-<form action="forstudentsannouncements.php" method="POST" enctype="multipart/form-data">
+<form action="anntostdbytchr.php" method="POST" enctype="multipart/form-data">
 <h1 id="sid">Announcement For Students Below:</h1>
 <label id="frwd">Announcement:</label><br>
 <textarea name="announcement" id="report"></textarea><br><br>

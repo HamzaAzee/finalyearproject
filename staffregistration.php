@@ -16,9 +16,8 @@ $result = mysqli_query($db, $s);
 $num= mysqli_num_rows($result);
 	$reg = "INSERT INTO stafftable (staffid, name, password, designation, department, qualification, subjectassigned) VALUES('$sid', '$name', '$pass', '$dsg', '$dpt', '$qual', '$suas')";
 	if(mysqli_query($db, $reg)){
-	header("location:astaff.php");
-	echo'<script>alert("Details Updates!")</script>';
+	echo '<script>alert("Staff member registered successfully")</script>';
 }else{
-	echo"error ".mysqli_error($db);
+	echo '<script>alert("Request failed")</script>';
 }
 ?>

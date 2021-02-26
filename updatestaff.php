@@ -15,9 +15,8 @@ $result = mysqli_query($db, $s);
 $num= mysqli_num_rows($result);
 	$reg = "UPDATE stafftable SET name='$name', password='$pass', designation='$dsg', department='$dpt', qualification='$qual', subjectassigned='$suas' WHERE staffid='$sid'";
 	if(mysqli_query($db, $reg)){
-	header("location:updatestudent.php");
-	echo'<script>alert("Details Updates!")</script>';
+	echo '<script>alert("Staff member updated successfully")</script>';
 }else{
-	echo"error ".mysqli_error($db);
+	echo '<script>alert("Request failed")</script>';
 }
 ?>

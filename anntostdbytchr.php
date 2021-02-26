@@ -10,8 +10,8 @@ $num= mysqli_num_rows($result);
 	$reg = "INSERT INTO studentannouncement(annbytchr) VALUES('$ann')";
 	if(mysqli_query($db, $reg)){
 		
-	echo"success";
+	echo '<script>alert("Announcement made successfully")</script>';
 }else{
-	echo"error ".mysqli_error($db);
+	echo '<script>alert("Request failed")</script>';
 }
 ?>

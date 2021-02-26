@@ -16,10 +16,11 @@ if (isset($_POST['upload'])) {
     // Execute query 
     if (mysqli_query($db, $sql)) {
         if (move_uploaded_file($tempname, $folder)) {
-            echo "<script>alert('Image Uploaded')</script>";
-            header('location:sli.php');
+            
+			echo '<script>alert("Image updated.")</script>';
+            
         } else {
-            echo "<script>alert('IFailed to upload image')</script>";
+            echo '<script>alert("Request failed")</script>';
         }
     } else {
         mysqli_error($db);

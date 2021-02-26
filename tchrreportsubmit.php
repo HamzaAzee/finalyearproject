@@ -10,9 +10,9 @@ if(isset($_POST['submit'])){
 	$sql = "UPDATE stafftable SET complaints= '$tb' WHERE staffid='$sid'";
 	$result=mysqli_query($db, $sql);
 	if($result){
-		echo"success";
+		echo '<script>alert("Complaint reported successfully")</script>';
 	}else{
-		echo"error occured ".mysqli_error($db);
+		echo '<script>alert("Request failed")</script>';
 	}
 }else{
 	mysqli_error($db);

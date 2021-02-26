@@ -54,6 +54,13 @@ else
 
 <label id="frwd2">STaff ID:</label><br>
 <input type="text" name="staffid" id="move4" placeholder="Staff ID"></textarea><br>
+
+<label id="frwd2">Enrolled Students:</label><br>
+<input type="text" name="enrolledstudents" id="move4" placeholder="Enrolled Students"></textarea><br>
+
+<label id="frwd2">Roll no#:</label><br>
+<input type="text" name="rollno" id="move4" placeholder="Roll no#"></textarea><br>
+
 <center>
 <button type="submit" class="btn btn-primary" name="submit" id="movefrwd2" >UPDATE</button>
 </center>

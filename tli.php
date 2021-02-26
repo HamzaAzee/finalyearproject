@@ -94,9 +94,22 @@ else{
 				    
 				   <span><a id="size">Event Log</a></span>
 				   <div class="dropdown-content">
-				   <a href="#">-------</a> <br>   <!--page required-->
-				   <a href="#">-------</a> <br> <!--page required-->
-				   <a href="#">-------</a>       <!--page required-->
+				   <a href="displayass.php">Submitted Assignments</a><br>       <!--page required-->
+				   <a href="displayquiz.php">Submitted Quizes</a>       <!--page required-->
+				   <?php
+				   include"connection.php";
+
+                   $sql="SELECT `announcement` FROM `staffannouncementstbl` WHERE 1";
+                   $result=mysqli_query($db,$sql);
+                   while($rows=mysqli_fetch_array($result))
+				   {
+					   
+				   ?>
+				   <h4 align=left> => <?php echo $rows['announcement'] . "<br>";?></h4>
+				   
+                   <?php
+				   }
+				   ?>      <!--page required-->
 				   </ul>
 				   </div>
 				   </div>

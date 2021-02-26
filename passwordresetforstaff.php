@@ -9,10 +9,10 @@ $pass=$_POST['password'];
 
 	$reg = "UPDATE stafftable SET password='$pass'  WHERE staffid='$sid'";
 	if(mysqli_query($db, $reg)){
-	header('location:tli.php');
-	echo "<script>alert('Password changed')</script>";
+	
+	echo '<script>alert("Password Reset successfully")</script>';
 	}else{
-		echo"Wrong staffid";
+		echo '<script>alert("Request failed")</script>';
 	}
 }
 ?>

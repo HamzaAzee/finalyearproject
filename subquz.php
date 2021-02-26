@@ -20,7 +20,7 @@ header("location:index.html");
 <body>
 <div class="navbar navbar-inverse navbar-static-top" id="nv"> 
 <div class="container">
-<a class="navbar-brand" id="a">Quiz</a>
+<a class="navbar-brand" id="a">Assignments</a>
 <button class="navbar-toggle"  data-toggle ="collapse" data-target= ".navHeaderCollapse"  >
  <span class="icon-bar"> </span>
  <span class="icon-bar"> </span>
@@ -38,42 +38,13 @@ header("location:index.html");
 <div class="container-fluid" id="resize">
 <div class="container" id="none">
 <div class="container" id="setting">
-<form action="submitquiz.php" method="POST" enctype="multipart/form-data">
-<div height="relative">
-<h1 id="sid">Quizes</h1>
-<center><table border=0 width=95% cellspacing="15"></center>
-<tr>
-<th>Subject Code</th>
-<th>Subject Name</th>
-<th>Quiz by</th>
-<th>Quiz</th>
-<th>Submit Quiz</th>
-</tr>
+<form action="postquz.php" method="POST" enctype="multipart/form-data">
+<h1 id="sid">Upload Your quizes:</h1>
+<label id="frwd2">Enter subject name</label><br>
+<input type="text" name="subname" id="move4" placeholder="Subject Name"></textarea><br>
 
-<?php
-include"connection.php";
-$name=$_SESSION['username'];
-$sql="SELECT `subcode`, `subname`, `assignedto`, `quiz` FROM `subjecttable` WHERE enrolledstudents='$name'";
-$result=mysqli_query($db,$sql);
-while($rows=mysqli_fetch_array($result))
-{
-echo"<tr>";
-echo"<td>".$rows['subcode']."</td>";
-echo"<td>".$rows['subname']."</td>";
-echo"<td>".$rows['assignedto']."</td>";
-echo "<td>";
-?>
-
-<a href="postquiz/<?php echo $rows['quiz']; ?>" class="img-fluid"><?php echo $rows['quiz']; ?></a></td>
-
-<td>
-<a type="submit" class="btn btn-success" href="subquz.php" id="move">Submit assignment</a></td>
-</tr>
-<?php
-}
-?>
-</table>
-</div>
+<input type="file" name="file" id="move"/><br>
+<button type="submit" class="btn btn-success" name="upload" id="move">Upload</button>
 </form>
 </div>
 </div></div>

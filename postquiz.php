@@ -17,9 +17,9 @@ if (isset($_POST['submit'])) {
     // Execute query 
     if (mysqli_query($db, $sql)) {
         if (move_uploaded_file($tempname, $folder)) {
-            echo "success";
+            echo '<script>alert("Quiz uploaded successfully")</script>';
         } else {
-            echo "error ".mysqli_error($db);
+            echo '<script>alert("Request failed")</script>';
         }
     } else {
        echo"error".mysqli_error($db);

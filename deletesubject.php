@@ -5,10 +5,10 @@ if(isset($_POST['delete'])){
 	
 	$sql="DELETE FROM subjecttable WHERE subcode='$suid'";
 	if(mysqli_query($db,$sql)){
-		header("location:deletesubform.php");
+		echo '<script>alert("Subject deleted successfully")</script>';
 	}
 	else{
-		echo"error ".mysqli_error($db);
+		echo '<script>alert("Request failed")</script>';
 	}
 }
 ?>
