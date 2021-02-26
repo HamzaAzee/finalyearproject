@@ -42,18 +42,10 @@ else
 <div class="container-fluid" id="resize">
 <div class="container" id="mtop">
 <div class="container" id="setting">
-<form class="field" method="POST" action="submanagement.php"  enctype="multipart/form-data">
-<h1 id="sid">Deal With Subjects Here:</h1>
-<label id="frwd2">Subject code:</label><br>
-<input type="text" name="subcode" id="move4" placeholder="Subject ID"></textarea><br>
-<label id="frwd2">Subject name:</label><br>
-<input type="text" name="subname" id="move4" placeholder="Subject name"></textarea><br>
+<form class="field" method="POST" action="insertintosbjtbl.php"  enctype="multipart/form-data">
+<h1 id="sid">Enroll students Here:</h1>
 
-<label id="frwd2">Assigned to:</label><br>
-<input type="text" name="assignedto" id="move4" placeholder="assigned to"></textarea><br>
 
-<label id="frwd2">STaff ID:</label><br>
-<input type="text" name="staffid" id="move4" placeholder="Staff ID"></textarea><br>
 
 <label id="frwd2">Enrolled Students:</label><br>
 <input type="text" name="enrolledstudents" id="move4" placeholder="Enrolled Students"></textarea><br>
@@ -61,10 +53,9 @@ else
 <label id="frwd2">Roll no#:</label><br>
 <input type="text" name="rollno" id="move4" placeholder="Roll no#"></textarea><br>
 
-<center><button type="submit" class="btn btn-danger" name="submit" id="movefrwd3">INSERT</button>
-<a class="btn btn-primary" id="movefrwd2" href="updatesub.php">UPDATE</a>
-<a class="btn btn-warning" id="movefrwd3" href="deletesubform.php">DELETE</a><br>
-<a class="btn btn-warning" id="movefrwd3" href="enrollstd.php">Enrollment</a><br></center>
+<center>
+<button type="submit" class="btn btn-primary" name="submit" id="movefrwd2" >UPDATE</button>
+</center>
 </form>
 </div>
 </div></div>

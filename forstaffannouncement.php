@@ -4,8 +4,13 @@ session_start();
 
 $ann=$_POST['announcement'];
 
-$sql="UPDATE stafftable SET announcements='$ann'";
-	if(mysqli_query($db, $sql)){
+$s="select * from staffannouncementstbl";
+$result = mysqli_query($db, $s);
+
+$num= mysqli_num_rows($result);
+	$reg = "INSERT INTO staffannouncementstbl(announcement) VALUES('$ann')";
+	if(mysqli_query($db, $reg)){
+		
 	echo"success";
 }else{
 	echo"error ".mysqli_error($db);

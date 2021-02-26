@@ -20,7 +20,7 @@ header("location:index.html");
 <body>
 <div class="navbar navbar-inverse navbar-static-top" id="nv"> 
 <div class="container">
-<a class="navbar-brand" id="a">Assignments</a>
+<a class="navbar-brand" id="a">Settings</a>
 <button class="navbar-toggle"  data-toggle ="collapse" data-target= ".navHeaderCollapse"  >
  <span class="icon-bar"> </span>
  <span class="icon-bar"> </span>
@@ -39,43 +39,9 @@ header("location:index.html");
 <div class="container" id="none">
 <div class="container" id="setting">
 <form action="submitass.php" method="POST" enctype="multipart/form-data">
-<div height="relative">
-<h1 id="sid">Assignments</h1>
-<center><table border=0 width=95% cellspacing="15"></center>
-<tr>
-<th>Subject Code</th>
-<th>Subject Name</th>
-<th>Assignment by</th>
-<th>Assignment</th>
-<th>Submit Assignment</th>
-</tr>
-
-<?php
-include"connection.php";
-$name=$_SESSION['username'];
-$sql="SELECT `subcode`, `subname`, `assignedto`, `assignment` FROM `subjecttable` WHERE enrolledstudents='$name'";
-$result=mysqli_query($db,$sql);
-while($rows=mysqli_fetch_array($result))
-{
-echo"<tr>";
-echo"<td>".$rows['subcode']."</td>";
-echo"<td>".$rows['subname']."</td>";
-echo"<td>".$rows['assignedto']."</td>";
-echo "<td>";
-?>
-
-<a href="postquiz/<?php echo $rows['assignment']; ?>" class="img-fluid"><?php echo $rows['assignment']; ?></a></td>
-
-
-<td><input type="file" name="file" id="move"/><br>
-<button type="submit" class="btn btn-success" name="submit" id="move">Submit assignment</button></td>
-</tr>
-<?php
-}
-?>
-
-</table>
-</div>
+<h1 id="sid">Update Your Assignments:</h1>
+<input type="file" name="file" id="move"/><br>
+<button type="submit" class="btn btn-success" name="upload" id="move">Upload</button>
 </form>
 </div>
 </div></div>

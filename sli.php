@@ -11,7 +11,6 @@ else{
 	if(mysqli_num_rows($result)>0){
 		$row=mysqli_fetch_assoc($result);
 		$image=$row['pics'];
-		$ann=$row['announcement'];
 		$imagePath="images/".$image;
 	}
 	
@@ -95,8 +94,23 @@ else{
 				   <span><a id="size">Event Log</a></span>
 				   <div class="dropdown-content">
 				   <a href="stassignment.php">Assignments</a> <br>   <!--page required-->
-				   <a href="#">Quiz</a> <br> <!--page required-->
-                   <h4>=> <?php echo $ann ?></h4>       <!--page required-->
+				   <a href="stquiz.php">Quiz</a> <br> <!--page required-->
+				   <h2>Announcements</h2> <br> <!--page required-->
+				  
+				   <?php
+				   include"connection.php";
+
+                   $sql="SELECT `annbyadmin`, `annbytchr` FROM `studentannouncement` WHERE 1";
+                   $result=mysqli_query($db,$sql);
+                   while($rows=mysqli_fetch_array($result))
+				   {
+					   
+				   ?>
+				   <h4 align=left> <?php echo $rows['annbyadmin'];?></h4>
+				   <h4 align=left> <?php echo $rows['annbytchr'];?></h4>
+                   <?php
+				   }
+				   ?>
 				   </ul>
 				   </div>
 				   </div>
@@ -113,7 +127,7 @@ else{
 </ul>
 <h5>Email:</h5>
 <ul>
-<li><link>Email: bond91153@gmail.com</link></li>
+<li><link>bond91153@gmail.com</link></li>
 <li><link>prada3213@gmail.com</link></li>
 </ul>
 </div>
